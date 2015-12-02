@@ -22,3 +22,13 @@ filetype plugin indent on     " required
 syntax on
 set incsearch
 set hlsearch
+
+" Key mapping for ctags, shift-left go to function definition, shift-right back
+" to function.
+nmap <F3> <C-]>
+nmap <F2> <C-t>
+
+" taglist, F12 for poen taglist, F5 for switch between windows
+nnoremap <silent> <F12> :TlistToggle<CR>
+nnoremap <silent> <F5>  :wincmd p<CR>
+
