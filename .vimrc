@@ -10,6 +10,7 @@ call vundle#rc()
 
 Plugin 'gmarik/vundle'
 Plugin 'bling/vim-airline'
+Plugin 'Valloric/YouCompleteMe'
 
 filetype plugin indent on     " required
 
@@ -28,7 +29,10 @@ set hlsearch
 nmap <F3> <C-]>
 nmap <F2> <C-t>
 
-" taglist, F12 for poen taglist, F5 for switch between windows
+" taglist, F12 for open taglist, F5 for switch between windows
 nnoremap <silent> <F12> :TlistToggle<CR>
 nnoremap <silent> <F5>  :wincmd p<CR>
+
+" for YouCompleteMe"
+let g:ycm_global_ycm_extra_conf = '~/.ycm_global_ycm_extra_conf.py'
 
