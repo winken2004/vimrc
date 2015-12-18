@@ -33,6 +33,11 @@ nmap <F2> <C-t>
 nnoremap <silent> <F12> :TlistToggle<CR>
 nnoremap <silent> <F5>  :wincmd p<CR>
 
+" this is for ctags:tag not found
+" it will search current folder for tags file and keep going one dirctory up
+" all the way to the root folder.
+set tags=tags;/
+
 " for YouCompleteMe"
 let g:ycm_global_ycm_extra_conf = '~/.ycm_global_ycm_extra_conf.py'
 
