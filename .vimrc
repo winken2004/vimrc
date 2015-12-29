@@ -24,8 +24,7 @@ syntax on
 set incsearch
 set hlsearch
 
-" Key mapping for ctags, shift-left go to function definition, shift-right back
-" to function.
+" Key mapping for ctags, F3 go to function definition, F2 back to function.
 nmap <F3> <C-]>
 nmap <F2> <C-t>
 
@@ -40,4 +39,22 @@ set tags=tags;/
 
 " for YouCompleteMe"
 let g:ycm_global_ycm_extra_conf = '~/.ycm_global_ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
+inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"   	"enter for select
+let g:ycm_collect_identifiers_from_tags_files=1
+let g:ycm_seed_identifiers_with_syntax=1
+
+" this is for ycm synatastic check and 
+"let g:ycm_register_as_syntastic_checker = 1 "default 1
+"let g:Show_diagnostics_ui = 1 "default 1
+
+" this is detailed settings for synatastic check.
+"let g:ycm_enable_diagnostic_signs = 1
+"let g:ycm_enable_diagnostic_highlighting = 1 
+"let g:ycm_always_populate_location_list = 0 "default 0
+"let g:ycm_open_loclist_on_ycm_diags = 1 "default 1
+
+" this is for debugging ycm.
+"let g:ycm_server_keep_logfiles = 1
+"let g:ycm_server_log_level = 'debug'
 
