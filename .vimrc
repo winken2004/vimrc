@@ -27,6 +27,7 @@ set hlsearch
 " Key mapping for ctags, F3 go to function definition, F2 back to function.
 nmap <F3> <C-]>
 nmap <F2> <C-t>
+nmap <F4> g]
 
 " taglist, F12 for open taglist, F5 for switch between windows
 nnoremap <silent> <F12> :TlistToggle<CR>
